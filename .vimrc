@@ -83,3 +83,6 @@ endfunction
 
 set background=dark
 colorscheme delek
+
+highlight Pmenu ctermfg=DarkGrey ctermbg=White
+highlight PmenuSel ctermfg=White ctermbg=DarkGrey
