@@ -14,3 +14,4 @@ My .tmux-conf which allows me to toggle panes for viewing in fullscreen ctrl + b
 ```
 bind-key a resize-pane -Z \; choose-tree "resize-pane -Z \; select-window -t '%%'"
 ```
+My daily usage requires for both vim and nvim, thus the intergartion between the two. Nvim for native LSP integration and vim for older systems.
