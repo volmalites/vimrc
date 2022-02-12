@@ -7,6 +7,7 @@ require('nvim-treesitter.configs').setup({
       -- ["<capture group>"] = "<highlight group>",
       -- ["keyword"] = "TSString",
     },
+    additional_vim_regex_highlighting = true
   },
 
   incremantal_selection = {
