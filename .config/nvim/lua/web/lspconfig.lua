@@ -24,7 +24,12 @@ cmp.setup({
     { name = 'vsnip' },
   }, {
     { name = 'buffer' },
-  })
+  }),
+  snippet = {
+    expand = function(args)
+      vim.fn["vsnip#anonymous"](args.body)
+    end,
+  },
 })
 
 cmp.setup.cmdline('/', {
