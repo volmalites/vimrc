@@ -103,4 +103,4 @@ colorscheme delek
 highlight Pmenu ctermfg=DarkGrey ctermbg=White
 highlight PmenuSel ctermfg=White ctermbg=DarkGrey
 hi Visual cterm=none ctermbg=darkgrey ctermfg=cyan
-hi MatchParen cterm=none ctermbg=cyan ctermfg=DarkGrey
+hi MatchParen cterm=none ctermbg=darkgrey ctermfg=cyan
