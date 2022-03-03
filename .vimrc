@@ -17,6 +17,9 @@ set incsearch
 set showmatch
 set cursorline
 
+set background=dark
+colorscheme delek
+
 set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
@@ -97,9 +100,7 @@ endfunction
 :set laststatus=2
 :set statusline=[%n]\ %<%f%h%m
 
-set background=dark
-colorscheme delek
-
+hi CursorLine cterm=NONE ctermbg=236
 highlight Pmenu ctermfg=DarkGrey ctermbg=White
 highlight PmenuSel ctermfg=White ctermbg=DarkGrey
 hi Visual cterm=none ctermbg=darkgrey ctermfg=cyan
