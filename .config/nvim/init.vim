@@ -13,7 +13,9 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSupdate'}
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
+lua require'lspconfig'.rust_analyzer.setup({})
 lua require("web")
