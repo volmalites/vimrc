@@ -17,5 +17,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
-lua require'lspconfig'.rust_analyzer.setup({})
-lua require("web")
+if&ft=='rs'
+  lua require'lspconfig'.rust_analyzer.setup({})
+else
+  lua require("bjorn")
+endif
