@@ -8,9 +8,10 @@ endfunction
 command W w !sudo tee % > /dev/null
 
 filetype plugin indent on
-set tabstop=2
-set shiftwidth=2
-set expandtab
+set tabstop=4
+set shiftwidth=4
+set noexpandtab
+set autoindent
 
 set hlsearch
 set incsearch
