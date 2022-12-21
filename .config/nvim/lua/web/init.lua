@@ -1,2 +1,2 @@
-require('bjorn.lspconfig')
-require('bjorn.ts')
+require('web.lspconfig')
+require('web.ts')
