@@ -20,5 +20,5 @@ call plug#end()
 if&ft=='rs'
   lua require'lspconfig'.rust_analyzer.setup({})
 else
-  lua require("bjorn")
+  lua require("web")
 endif
