@@ -16,6 +16,7 @@ Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'simrat39/rust-tools.nvim'
+Plug 'williamboman/mason.nvim'
 
 call plug#end()
 
@@ -24,3 +25,5 @@ if&ft=='rs'
 else
   lua require("web")
 endif
+
+lua require("mason").setup()
