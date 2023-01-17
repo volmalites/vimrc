@@ -14,6 +14,8 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSupdate'}
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neovim/nvim-lspconfig'
+Plug 'simrat39/rust-tools.nvim'
 
 call plug#end()
 
