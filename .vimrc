@@ -18,9 +18,6 @@ set incsearch
 set showmatch
 set cursorline
 
-set background=dark
-colorscheme delek
-
 set number
 set relativenumber
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
@@ -101,9 +98,3 @@ endfunction
 
 :set laststatus=2
 :set statusline=[%n]\ %<%f%h%m
-
-hi CursorLine cterm=NONE ctermbg=236
-highlight Pmenu ctermfg=DarkGrey ctermbg=White
-highlight PmenuSel ctermfg=White ctermbg=DarkGrey
-hi Visual cterm=none ctermbg=darkgrey ctermfg=cyan
-hi MatchParen cterm=none ctermbg=darkgrey ctermfg=cyan
