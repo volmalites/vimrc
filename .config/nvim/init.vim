@@ -11,3 +11,7 @@ else
 endif
 
 lua require("mason").setup()
+
+set termquicolors
+colorscheme melange
+set mouse =
