@@ -1,4 +1,4 @@
-# Minimalistic vimrc
+# My personal minimalistic vimrc for vim / neovim
 My vimrc config, as vanilla as possible, used with tmux
 
  * Numbered lines and tablines
