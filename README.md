@@ -5,8 +5,7 @@ My vimrc config, as vanilla as possible, used with tmux
  * Tabline and statusline updates on page edits (modified flag) while retaining numbered tablines
  * Buffer number in statusline
  * Least distracting color scheme
- * Sudo save with :W
- * Tab size of 4 spaces (I prefer 2 depending on what I am working on)
+ * Tab size of 4 spaces
  * Underline the line where the cursor is
 
 My .tmux-conf which allows me to toggle panes for viewing in fullscreen ctrl + b a
