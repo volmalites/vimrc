@@ -12,7 +12,5 @@ endif
 
 lua require("mason").setup()
 
-set termguicolors
-colorscheme melange
 set mouse =
 highlight Visual ctermfg=grey ctermbg=cyan
