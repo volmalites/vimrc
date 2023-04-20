@@ -22,5 +22,5 @@ require('packer').startup(function()
 	use { 'neoclide/coc.nvim', branch = 'release' }
 	use 'simrat39/rust-tools.nvim'
 	use 'williamboman/mason.nvim'
-	use 'savq/melange-nvim'
+	use { "ellisonleao/gruvbox.nvim" }
 end)
