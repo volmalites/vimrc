@@ -13,4 +13,4 @@ endif
 lua require("mason").setup()
 
 set mouse =
-highlight Visual ctermfg=grey ctermbg=cyan
+highlight Visual ctermfg=grey ctermbg=black
