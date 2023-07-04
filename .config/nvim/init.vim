@@ -13,4 +13,7 @@ endif
 lua require("mason").setup()
 
 set mouse =
-highlight Visual ctermfg=grey ctermbg=black
+augroup CustomVisualHighlight
+  autocmd!
+  autocmd ColorScheme * highlight Visual ctermfg=grey ctermbg=black
+augroup END
