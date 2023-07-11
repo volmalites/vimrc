@@ -17,3 +17,4 @@ augroup CustomVisualHighlight
   autocmd!
   autocmd ColorScheme * highlight Visual ctermfg=grey ctermbg=black
 augroup END
+highlight Visual ctermfg=grey ctermbg=black
