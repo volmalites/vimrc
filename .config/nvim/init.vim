@@ -16,5 +16,7 @@ set mouse =
 augroup CustomVisualHighlight
   autocmd!
   autocmd ColorScheme * highlight Visual ctermfg=grey ctermbg=black
+  autocmd ColorScheme * highlight search ctermfg=black ctermbg=cyan
 augroup END
 highlight Visual ctermfg=grey ctermbg=black
+hi search ctermfg=black ctermbg=cyan
