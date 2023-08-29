@@ -26,9 +26,8 @@ syntax enable
 
 set showtabline=1  " 1 to show tabline only when more than one tab is present
 set tabline=%!MyTabLine()  " custom tab pages line
-function! MyTabLine() " acclamation to avoid conflict
+function! MyTabLine()
     let s = '' " complete tabline goes here
-    " loop through each tab page
     for t in range(tabpagenr('$'))
         " set highlight
         if t + 1 == tabpagenr()
@@ -42,27 +41,17 @@ function! MyTabLine() " acclamation to avoid conflict
         " set page number string
         let s .= t + 1 . ' '
         " get buffer names and statuses
-        let n = ''      "temp string for buffer names while we loop and check buftype
         let m = 0       " &modified counter
         let bc = len(tabpagebuflist(t + 1))     "counter to avoid last ' '
         " loop through each buffer in a tab
         for b in tabpagebuflist(t + 1)
-            " buffer types: quickfix gets a [Q], help gets [H]{base fname}
-            " others get 1dir/2dir/3dir/fname shortened to 1/2/3/fname
-            if getbufvar( b, "&buftype" ) == 'help'
-                let n .= '[H]' . fnamemodify( bufname(b), ':t:s/.txt$//' )
-            elseif getbufvar( b, "&buftype" ) == 'quickfix'
-                let n .= '[Q]'
-            else
-                let n .= pathshorten(bufname(b))
-            endif
             " check and ++ tab's &modified count
             if getbufvar( b, "&modified" )
                 let m += 1
             endif
             " no final ' ' added...formatting looks better done later
             if bc > 1
-                let n .= ' '
+                let s .= ' '
             endif
             let bc -= 1
         endfor
@@ -79,6 +68,7 @@ function! MyTabLine() " acclamation to avoid conflict
             let s .= '%#TabLine#'
         endif
         " add buffer names
+        let n = fnamemodify(bufname(tabpagebuflist(t + 1)[0]), ':t')
         if n == ''
             let s.= '[New]'
         else
@@ -95,6 +85,7 @@ function! MyTabLine() " acclamation to avoid conflict
     endif
     return s
 endfunction
+
 
 :set laststatus=2
 :set statusline=[%n]\ %<%f%h%m
